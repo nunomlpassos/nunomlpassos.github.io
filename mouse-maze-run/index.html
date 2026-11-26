@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173922">
+  <meta name="description" content="Small mouse. Big trouble. Play Mouse Maze Run on Android, iPhone and iPad. Choose your store and start your maze adventure.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mouse Maze Run | Available now">
+  <meta property="og:description" content="Find the cheese. Dodge trouble. Make every move count. Available on Google Play and the App Store.">
+  <meta property="og:url" content="https://nunomlpassos.github.io/mouse-maze-run/">
+  <meta property="og:image" content="https://nunomlpassos.github.io/mouse-maze-run/cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://nunomlpassos.github.io/mouse-maze-run/">
+  <title>Mouse Maze Run | Android &amp; iOS</title>
+  <style>
+    :root{color-scheme:light;font-family:Arial,Helvetica,sans-serif;color:#fff9e8;background:#173922}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 80% 20%,#34582d 0,transparent 60%),#173922}
+    a{color:inherit}a:focus-visible{outline:3px solid #ffdc66;outline-offset:6px}
+    .wrap{width:min(1040px,100%);margin:auto;padding:30px 30px 18px}
+    header{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:24px}
+    .brand{font-size:14px;letter-spacing:2px;font-weight:700}.status{font-size:12px;letter-spacing:1px;color:#d8e7c4}
+    main{display:grid;grid-template-columns:minmax(0,390px) minmax(0,1fr);gap:64px;align-items:center}
+    .art{margin:0}.art img{display:block;width:100%;height:auto;border-radius:24px;box-shadow:0 24px 70px #07150b66}
+    .eyebrow{color:#ffe18b;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px}
+    h1{font-size:clamp(38px,5.2vw,60px);line-height:1.02;letter-spacing:-2px;margin:0 0 22px}
+    h1 span{display:block;color:#ffdb69}p{font-size:18px;line-height:1.55;margin:0 0 24px;color:#e0e9d7}
+    .stores{display:grid;gap:12px;margin:28px 0 17px}.store{display:flex;align-items:center;justify-content:space-between;min-height:76px;border:1px solid #ffffff26;border-radius:14px;padding:15px 20px;text-decoration:none;background:#fff9e8;color:#193923;transition:transform .15s ease}
+    .store:hover{transform:translateY(-2px)}.store.apple{background:#294d31;color:#fff9e8}.store small{display:block;font-size:12px;line-height:1.4}.store strong{display:block;font-size:25px;line-height:1.2;margin-top:2px}.store .arrow{font-size:25px;line-height:1}
+    .details{font-size:12px;color:#c2d3b7;margin:0}.routing{font-size:14px;line-height:1.5;color:#ffe18b;min-height:42px;margin:22px 0 0}.manual{font-size:13px;text-underline-offset:4px;color:#dbe7ce;display:inline-block;margin-top:8px}
+    footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:30px;padding:18px 0 4px;border-top:1px solid #ffffff20;font-size:12px;color:#c7d7bd}footer nav{display:flex;gap:18px;flex-wrap:wrap}footer a{text-underline-offset:3px}
+    @media(max-width:700px){.wrap{padding:22px 22px 16px}header{margin-bottom:34px}.status{font-size:10px}main{grid-template-columns:1fr;gap:32px}.copy{grid-row:1}.art{max-width:330px;width:100%;margin:0 auto}h1{font-size:48px}.stores{margin-top:22px}p{font-size:17px}.routing{min-height:0;margin-top:20px}footer{margin-top:26px;line-height:1.6}}
+    @media(prefers-reduced-motion:reduce){.store{transition:none}}
+  </style>
+  <script defer src="route.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header><span class="brand">BARNUN GAMES</span><span class="status">AVAILABLE NOW</span></header>
+    <main>
+      <figure class="art"><img src="cover.jpg" width="1200" height="1920" alt="Mouse Maze Run, a little mouse and its friends racing through a garden" fetchpriority="high"></figure>
+      <section class="copy" aria-labelledby="title">
+        <p class="eyebrow">Mouse Maze Run</p>
+        <h1 id="title">Small mouse.<span>Big trouble.</span></h1>
+        <p>Find the cheese. Dodge trouble.<br>Make every move count.</p>
+        <div class="stores" aria-label="Download Mouse Maze Run">
+          <a class="store" id="google-play" href="https://play.google.com/store/apps/details?id=com.nunogames.mousemazerun"><span><small>Get it for Android</small><strong>Google Play</strong></span><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="store apple" id="app-store" href="https://apps.apple.com/app/id6833909313"><span><small>Get it for iPhone &amp; iPad</small><strong>App Store</strong></span><span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="details">Free to download. Contains ads and optional in-app purchases.</p>
+        <p class="routing" id="routing-status" role="status">Choose your store to start playing.</p>
+        <a class="manual" href="?choose=1">Show both stores</a>
+        <noscript><p class="details">Choose either button above to download the game.</p></noscript>
+      </section>
+    </main>
+    <footer><span>© 2026 Barnun Games</span><nav aria-label="Help and privacy"><a href="mailto:mousemazerun@gmail.com">Support</a><a href="../mouse-maze-run-privacy.html">Android privacy</a><a href="../mouse-maze-run-ios-privacy.html">iOS privacy</a></nav></footer>
+  </div>
+</body>
+</html>
